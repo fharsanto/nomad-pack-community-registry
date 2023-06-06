@@ -60,7 +60,7 @@ job [[ template "job_name" . ]] {
     }
 
     task "redis" {
-      driver = "docker"
+      driver = "podman"
       [[- if .my.use_host_volume ]]
       volume_mount {
         volume      = "redis"

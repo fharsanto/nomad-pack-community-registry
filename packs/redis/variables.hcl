@@ -130,7 +130,7 @@ variable "restart_attempts" {
 variable "image" {
   description = "Redis Docker image."
   type        = string
-  default     = "redis:latest"
+  default     = "docker://redis:latest"
 }
 
 variable "resources" {

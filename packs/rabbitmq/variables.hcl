@@ -49,7 +49,7 @@ variable "vault_roles" {
 variable "image" {
   description = "docker container to use"
   type        = string
-  default     = "rabbitmq:3.9.10-management-alpine"
+  default     = "docker://rabbitmq:3.9.10-management-alpine"
 }
 
 variable "enabled_plugins" {

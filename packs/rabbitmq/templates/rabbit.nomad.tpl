@@ -42,7 +42,7 @@ job [[ template "job_name" . ]] {
     }
 
     task "rabbit" {
-      driver = "docker"
+      driver = "podman"
 
       [[ if .rabbitmq.vault_enabled -]]
       vault {
